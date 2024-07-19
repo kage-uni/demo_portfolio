@@ -1,0 +1,112 @@
+/* layout */
+.inlineBlock {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.sectionCenter {
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+/* flexBox or grid */
+.flex-justifyBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-justifyCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-alignCenter {
+  display: flex;
+  align-items: center;
+}
+
+.gridCenter {
+  display: grid;
+  place-items: center;
+}
+
+/* background */
+
+
+/* borders */
+
+
+/* spacing */
+.px1 {
+  padding: 0 1rem;
+}
+
+
+/* sizing */
+.w20{
+  width: 20px;
+}
+
+.wFull {
+  width: 100%
+}
+
+.h20{
+  height: 20px;
+}
+
+.h270 {
+  height: 270px;
+}
+
+.max-w960 {
+  max-width: 960px;
+}
+
+.max-w384 {
+  max-width: 384px;
+}
+
+.max-w448 {
+  max-width: 448px;
+}
+
+
+/* typography */
+.listNone {
+  list-style: none;
+}
+
+.text1{
+  font-size: 1rem;
+}
+
+.text075{
+  font-size: 0.75rem;
+}
+
+/* table */
+
+
+/* effects */
+
+
+/* transitions & animation */
+
+
+/* transforms */
+
+
+/* interactivity */
+
+
+/* accessibility */
+
+
+
+
+

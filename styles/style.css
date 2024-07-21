@@ -1,112 +1,285 @@
 /* layout */
+.fixed {
+  /* category:layout */
+  position: fixed;
+}
+
+.absolute {
+  /* category:layout */
+  position: absolute;
+}
+
+.relative {
+  /* category:layout */
+  position: relative;
+}
+
 .inlineBlock {
+  /* category:layout */
   display: inline-block;
 }
 
 .flex {
+  /* category:layout */
   display: flex;
 }
 
 .sectionCenter {
+  /* category:layout */
   margin: 0 auto;
   width: 100%;
 }
 
+.left0.5 {
+  /* category:layout */
+  left: 50%;
+}
+
+.object-cover {
+  /* category:layout */
+  object-fit: cover;
+}
 
 /* flexBox or grid */
 .flex-justifyBetween {
+  /* category:flexBox or grid */
   display: flex;
   justify-content: space-between;
 }
 
 .flex-justifyCenter {
+  /* category:flexBox or grid */
   display: flex;
   justify-content: center;
 }
 
 .flex-alignCenter {
+  /* category:flexBox or grid */
   display: flex;
   align-items: center;
 }
 
+.flex-column {
+  /* category:flexBox or grid */
+  display: flex;
+  flex-direction: column;
+}
+
 .gridCenter {
+  /* category:flexBox or grid */
   display: grid;
   place-items: center;
 }
 
 /* background */
 
-
 /* borders */
 
-
 /* spacing */
+.mb1 {
+  /* category:spacing */
+  margin-bottom: 1rem;
+}
+
+.mb2 {
+  /* category:spacing */
+  margin-bottom: 2rem;
+}
+.mb3 {
+  /* category:spacing */
+  margin-bottom: 3rem;
+}
+
+.mb4 {
+  /* category:spacing */
+  margin-bottom: 4rem;
+}
+
+.mb5 {
+  /* category:spacing */
+  margin-bottom: 5rem;
+}
+
+.mx1 {
+  /* category:spacing */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pb1 {
+  /* category:spacing */
+  padding-buttom: 1rem;
+}
+
 .px1 {
+  /* category:spacing */
   padding: 0 1rem;
 }
 
+.pl1 {
+  /* category:spacing */
+  padding-left: 1rem;
+}
 
 /* sizing */
-.w20{
+.w20 {
+  /* category:sizing */
   width: 20px;
 }
 
-.wFull {
-  width: 100%
+.wAuto {
+  /* category:sizing */
+  width: auto;
 }
 
-.h20{
+.wFit {
+  /* category:sizing */
+  width: fit-content;
+}
+
+.wFull {
+  /* category:sizing */
+  width: 100%;
+}
+
+.h20 {
+  /* category:sizing */
   height: 20px;
 }
 
 .h270 {
+  /* category:sizing */
   height: 270px;
 }
 
+.h420 {
+  /* category:sizing */
+  height: 420px;
+}
+
+.hAuto {
+  /* category:sizing */
+  height: auto;
+}
+
+.hFull {
+  /* category:sizing */
+  height: 100%;
+}
+
 .max-w960 {
+  /* category:sizing */
   max-width: 960px;
 }
 
 .max-w384 {
+  /* category:sizing */
   max-width: 384px;
 }
 
 .max-w448 {
+  /* category:sizing */
   max-width: 448px;
 }
 
-
-/* typography */
-.listNone {
-  list-style: none;
+.baseContentSize {
+  /* category:sizing */
+  max-width: 960px;
 }
 
-.text1{
+/* typography */
+* {
+  /* category:typography */
+}
+
+html {
+  /* category:typography */
+  font-size: 16px;
+}
+
+body {
+  /* category:typography */
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  line-height: normal;
+}
+
+h1 {
+  /* category:typography */
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  /* category:typography */
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  /* category:typography */
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h4 {
+  /* category:typography */
+  font-size: 1.5rem;
+}
+
+h5 {
+  /* category:typography */
+  font-size: 1.25rem;
+}
+
+h6 {
+  /* category:typography */
   font-size: 1rem;
 }
 
-.text075{
+p {
+  /* category:typography */
+  font-size: 1rem;
+}
+
+.font-bold {
+  /* category:typography */
+  font-weight: 700;
+}
+
+.text1 {
+  /* category:typography */
+  font-size: 1rem;
+}
+
+.text075 {
+  /* category:typography */
   font-size: 0.75rem;
+}
+
+.textCenter {
+  /* category:typography */
+  text-align: center;
+}
+
+.aStyleNone {
+  /* category:typography */
+  color: currentColor;
+  text-decoration: none;
 }
 
 /* table */
 
-
 /* effects */
-
 
 /* transitions & animation */
 
-
 /* transforms */
-
 
 /* interactivity */
 
-
 /* accessibility */
 
+/* custom styles */
 
-
-
-
+/* custom animation */

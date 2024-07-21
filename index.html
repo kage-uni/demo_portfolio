@@ -1,43 +1,98 @@
 <!DOCTYPE html>
 <html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Top</title>
-    <link rel="stylesheet" href="styles\styleReset.css">
-    <link rel="stylesheet" href="styles\styleResetFirefox.css">
-    <link rel="stylesheet" href="styles\stytleResetChrome.css">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body class="sectionCenter">
-  <header class="max-w960 h270 flex-justifyBetween flex-alignCenter px1">
-    <h1><img src="./public/logo.svg" alt="logo"></h1>
-    <nav class="max-w448 flex-justifyBetween">
-      <ul class="flex-justifyBetween listNone">
-        <li class="text075">About</li>
-        <li>Works</li>
-        <li>News</li>
-        <li>Contact</li>
-        <li ><a href="#" target="_blank"><img class="w20 h20" src="./public/icon-instagram.png" alt="Instagram"></a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="mainVisual">
-      <img class="wFull" src="public\mainvisual-pc.jpg" alt="mainVisual">
-    </section>
-    <section id="about" class="max-w960">
-      <h2>about</h2>
-      <h5>Xxxxx Ashley</h5>
-      <address>
-        2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan<br>
-        tel: 000-0000-0000<br>
-        url: www.xxxxxx.jp<br>
-        mail: xxx@xxxxxx.jp
-      </address>
-      <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-    </section>
-  </main>
-  <footer>&copy;satoshi</footer>
-</body>
+    <link rel="stylesheet" href="styles\styleReset.css" />
+    <link rel="stylesheet" href="styles\styleResetFirefox.css" />
+    <link rel="stylesheet" href="styles\stytleResetChrome.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="wFull flex-column flex-alignCenter">
+    <header
+      id="header"
+      class="baseContentSize wFull h270 flex flex-justifyBetween flex-alignCenter px1"
+    >
+      <h1><img src="./public/logo.svg" alt="logo" /></h1>
+      <nav class="max-w448 wFull">
+        <ul class="flex-justifyBetween">
+          <li><a class="pl1 text1 aStyleNone" href="#about">About</a></li>
+          <li><a class="pl1 text1 aStyleNone" href="#">Works</a></li>
+          <li><a class="pl1 text1 aStyleNone" href="#">News</a></li>
+          <li><a class="pl1 text1 aStyleNone" href="#">Contact</a></li>
+          <li>
+            <a href="#" target="_blank"
+              ><img
+                class="w20 h20"
+                src="./public/icon-instagram.png"
+                alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wFull flex-column flex-alignCenter">
+      <section id="mainVisual" class="relative wFull h420 mb5">
+        <picture class="wFull hFull">
+          <source
+            class="absolute wFull hFull object-cover"
+            media="(min-width: )"
+            srcset=""
+          />
+          <source
+            class="absolute wFull hFull object-cover"
+            media="(min-width: )"
+            srcset=""
+          />
+          <img
+            class="absolute wFull hFull object-cover"
+            src="public\mainvisual-pc.jpg"
+            alt="mainVisual"
+          />
+        </picture>
+      </section>
+      <section
+        id="about"
+        class="baseContentSize mb5"
+        itemscope
+        itemtype="https://schema.org/About"
+      >
+        <h2 class="textCenter mb1">About</h2>
+        <h3 class="mb1" itemprop="name">Xxxxx Ashley</h3>
+        <address>
+          <ul class="mb1">
+            <li itemprop="address">
+              <strong class="font-bold">Address: </strong>
+              2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo
+              106-0031
+            </li>
+            <li itemprop="country">
+              <strong class="font-bold">Country: </strong>
+              Japan
+            </li>
+            <li itemprop="tel">
+              <strong class="font-bold">Tel: </strong>
+              000-0000-0000
+            </li>
+            <li itemprop="url">
+              <strong class="font-bold">URL:</strong>
+              www.xxxxxx.jp
+            </li>
+            <li itemprop="mail">
+              <strong class="font-bold">Mail: </strong>
+              xxx@xxxxxx.jp
+            </li>
+          </ul>
+        </address>
+        <p>
+          <strong class="font-bold">プロフィール<br /> </strong>
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+      </section>
+    </main>
+    <footer class="mx1">&copy;satoshi</footer>
+  </body>
 </html>

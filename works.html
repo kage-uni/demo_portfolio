@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Works</title>
+    <link rel="stylesheet" href="styles\styleReset.css" />
+    <link rel="stylesheet" href="styles\styleResetFirefox.css" />
+    <link rel="stylesheet" href="styles\stytleResetChrome.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="wFull flex-column flex-alignCenter">
+    <header
+      id="header"
+      class="baseContentSize wFull h270 flex flex-justifyBetween flex-alignCenter px1"
+    >
+      <h1>
+        <a href="./index.html#top"
+          ><img src="./public/logo.svg" alt="logo"
+        /></a>
+      </h1>
+      <nav class="max-w448 wFull">
+        <ul class="flex-justifyBetween">
+          <li>
+            <a class="pl1 text1 aStyleNone" href="./index.html#about">About</a>
+          </li>
+          <li><a class="pl1 text1 aStyleNone" href="./works.html">Works</a></li>
+          <li><a class="pl1 text1 aStyleNone" href="#">News</a></li>
+          <li><a class="pl1 text1 aStyleNone" href="#">Contact</a></li>
+          <li>
+            <a href="#" target="_blank"
+              ><img
+                class="w20 h20"
+                src="./public/icon-instagram.png"
+                alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wFull flex-column flex-alignCenter">
+      <section id="mainVisual" class="relative wFull h160 mb5">
+        <picture class="wFull hFull">
+          <source
+            class="absolute wFull hFull object-cover"
+            media="(min-width: )"
+            srcset=""
+          />
+          <source
+            class="absolute wFull hFull object-cover"
+            media="(min-width: )"
+            srcset=""
+          />
+          <img
+            class="absolute wFull hFull object-cover"
+            src="public\mainvisual-pc.jpg"
+            alt="mainVisual"
+          />
+        </picture>
+      </section>
+      <section
+        id="works"
+        class="baseContentSize mb5"
+        itemscope
+        itemtype="https://schema.org/Works"
+      >
+        <h2 class="textCenter mb1">Works</h2>
+        <div class="">
+          <ul class="">
+            <li class="wFull"><img src="" alt="" class="max-wFull" /></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="mx1">&copy;satoshi</footer>
+  </body>
 </html>

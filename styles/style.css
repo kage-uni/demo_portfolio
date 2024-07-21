@@ -147,6 +147,11 @@
   height: 20px;
 }
 
+.h160 {
+  /* category:sizing */
+  height: 160px;
+}
+
 .h270 {
   /* category:sizing */
   height: 270px;
@@ -180,6 +185,11 @@
 .max-w448 {
   /* category:sizing */
   max-width: 448px;
+}
+
+.max-wFull {
+  /* category:sizing */
+  max-width: 100%;
 }
 
 .baseContentSize {
@@ -277,6 +287,10 @@ p {
 /* transforms */
 
 /* interactivity */
+html {
+  /* category:interactivity */
+  scroll-behavior: smooth;
+}
 
 /* accessibility */
 

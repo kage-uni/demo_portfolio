@@ -75,6 +75,11 @@
   margin-bottom: 1rem;
 }
 
+.p1 {
+  /* category:spacing */
+  padding: 1rem
+}
+
 .pb1 {
   /* category:spacing */
   padding-bottom: 1rem;
@@ -93,12 +98,6 @@
 .py0_5 {
   /* category:spacing */
   padding: 0.5rem 0;
-}
-
-.baseContentSize {
-  /* category:spacing */
-  max-width: 1280px;
-  padding: 0 1rem;
 }
 
 /* flexBox or grid */
@@ -157,6 +156,26 @@
 }
 
 /* borders */
+.border-t-1 {
+  /* category:borders */
+  border-top-width: 1px;
+}
+
+.border-y-1 {
+  /* category:borders */
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.border-solid {
+  /* category:borders */
+  border-style: solid;
+}
+
+.border-gray-500 {
+  /* category:borders */
+  border-color: gray;
+}
 
 /* sizing */
 .w0_33 {
@@ -196,11 +215,6 @@
 .h160 {
   /* category:sizing */
   height: 160px;
-}
-
-.h270 {
-  /* category:sizing */
-  height: 270px;
 }
 
 .h100 {
@@ -309,6 +323,11 @@ p {
   font-size: 1rem;
 }
 
+.line-h1_5 {
+  /* category:typography */
+  line-height: 1.5;
+}
+
 .font-bold {
   /* category:typography */
   font-weight: 700;
@@ -370,14 +389,123 @@ html {
 /* accessibility */
 
 /* combination styles */
-@media screen and (min-width: 640px) {
-  .box-border_mediaSet {
-    /* category:layout/sizing */
-    box-sizing: border-box;
-    width: 100%;
-  }
+.box-border_mediaSet {
+  /* category:layout/sizing */
+  box-sizing: border-box;
+  width: 100%;
 }
-@media screen and (min-width: 768px) {
+
+.media_baseContentSize {
+  /* category:spacing */
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.media-flex-table {
+  /* category:flexBox or grid */
+  display: flex;
+  flex-direction: column;
+}
+
+.media_header_flexStyle {
+  /* category:flexBox or grid */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.media_header_height {
+  /* category:sizing */
+  height: 120px;
+}
+
+.media-thp {
+  /* category:spacing */
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.media-tdp {
+  /* category:spacing */
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+/* combination animation */
+
+
+@media (min-width: 768px) {
+/* layout */
+
+
+/* spacing */
+
+
+/* flexBox or grid */
+
+
+/* borders */
+
+
+/* sizing */
+
+
+/* typography */
+
+
+/* backgrounds */
+
+
+/* transitions & animation */
+
+
+/* transforms */
+
+
+/* interactivity */
+
+
+/* SVG */
+
+
+/* table */
+
+
+/* effects */
+
+
+/* Filters */
+
+
+/* accessibility */
+
+
+/* combination styles */
+  .media-flex-table {
+    /* category:flexBox or grid */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .media_baseContentSize {
+    /* category:spacing */
+    max-width: 1280px;
+    padding: 0 1rem;
+  }
+
+  .media-thp {
+    /* category:spacing */
+    padding: 1rem;
+  }
+  
+  .media-tdp {
+    /* category:spacing */
+    padding: 1rem;
+  }
+
   .box-border_mediaSet {
     /* category:layout/sizing */
     box-sizing: border-box;
@@ -393,8 +521,78 @@ html {
     /* category:layout/sizing */
     padding-left: 10px;
   }
+
+
+/* combination animation */
+
+
 }
-@media screen and (min-width: 960px) {
+
+@media (min-width: 960px) {
+/* layout */
+
+
+/* spacing */
+ 
+
+/* flexBox or grid */
+
+
+/* borders */
+
+
+/* sizing */
+
+
+/* typography */
+
+
+/* backgrounds */
+
+
+/* transitions & animation */
+
+
+/* transforms */
+
+
+/* interactivity */
+
+
+/* SVG */
+
+
+/* table */
+
+
+/* effects */
+
+
+/* Filters */
+
+
+/* accessibility */
+
+
+/* combination styles */
+  .media_header_flexStyle {
+    /* category:flexBox or grid */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .media_header_height {
+    /* category:sizing */
+    height: 270px;
+  }
+
+  .media_baseContentSize {
+    /* category:spacing */
+    max-width: 1280px;
+    padding: 0 1rem;
+  }
+
   .box-border_mediaSet {
     /* category:layout/sizing */
     box-sizing: border-box;
@@ -403,6 +601,7 @@ html {
 
   .box-border_mediaSet:nth-child(3n + 1) {
     /* category:layout/sizing */
+    padding-left: 0;
     padding-right: 20px;
   }
 
@@ -415,7 +614,11 @@ html {
   .box-border_mediaSet:nth-child(3n + 3) {
     /* category:layout/sizing */
     padding-left: 20px;
+    padding-right: 0;
   }
-}
+
 
 /* combination animation */
+
+
+}

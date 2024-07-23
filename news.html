@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <!-- <link rel="stylesheet" href="styles\styleResetFirefox.css" />
+    <link rel="stylesheet" href="styles\stytleResetChrome.css" /> -->
+    <link rel="stylesheet" href="styles\styleReset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header
+    id="header"
+    class="sectionCenter media_baseContentSize media_header_height media_header_flexStyle"
+  >
+    <h1>
+      <a href="./index.html"><img src="./public/logo.svg" alt="logo" /></a>
+    </h1>
+    <nav class="max-w448 wFull">
+      <ul class="flex-justifyBetween">
+        <li class="list-none">
+          <a class="pl1 text1 aStyleNone" href="./index.html#about">About</a>
+        </li>
+        <li class="list-none">
+          <a class="pl1 text1 aStyleNone" href="./works.html">Works</a>
+        </li>
+        <li class="list-none">
+          <a class="pl1 text1 aStyleNone" href="./news.html">News</a>
+        </li>
+        <li class="list-none">
+          <a class="pl1 text1 aStyleNone" href="./contact.html">Contact</a>
+        </li>
+        <li class="list-none">
+          <a href="#" target="_blank"
+            ><img
+              class="w20 h20"
+              src="./public/icon-instagram.png"
+              alt="Instagram"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <main class="wFull flex-column flex-alignCenter">
+      <section id="mainVisual" class="relative wFull h160 mb5">
+        <picture class="wFull hFull">
+          <source
+            class="absolute wFull hFull object-cover"
+            media="(min-width: )"
+            srcset=""
+          />
+          <source
+            class="absolute wFull hFull object-cover"
+            media="(min-width: )"
+            srcset=""
+          />
+          <img
+            class="absolute wFull hFull object-cover"
+            src="public\mainvisual-pc.jpg"
+            alt="mainVisual"
+          />
+        </picture>
+      </section>
+      <section
+        id="news"
+        class="wFull media_baseContentSize mb5"
+        itemscope
+        itemtype="https://schema.org/News"
+      >
+        <h2 class="textCenter mb1">News</h2>
+        <table class="wFull line-h1_5">
+          <tr class="media-flex-table border-t-1 border-solid border-gray-500">
+            <th class="media-thp align-baseline">2020.XX.XX</th>
+            <td class="media-tdp align-baseline">デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</td>
+          </tr>
+          <tr class="media-flex-table border-t-1 border-solid border-gray-500">
+            <th class="media-thp">2020.XX.XX</th>
+            <td class="media-tdp">ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</td>
+          </tr>
+          <tr class="media-flex-table border-t-1 border-solid border-gray-500">
+            <th class="media-thp">2019.XX.XX</th>
+            <td class="media-tdp">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</td>
+          </tr>
+          <tr class="media-flex-table border-t-1 border-solid border-gray-500">
+            <th class="media-thp">2019.XX.XX</th>
+            <td class="media-tdp">デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</td>
+          </tr>
+          <tr class="media-flex-table border-y-1 border-solid border-gray-500">
+            <th class="media-thp">2019.XX.XX</th>
+            <td class="media-tdp">【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer class="py0_5 textCenter text0_75 text-white bg-black">
+      &copy;satoshi
+    </footer>
+  </body>
 </html>

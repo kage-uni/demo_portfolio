@@ -75,9 +75,14 @@
   margin-bottom: 1rem;
 }
 
+.p0_5 {
+  /* category:spacing */
+  padding: 0.5rem;
+}
+
 .p1 {
   /* category:spacing */
-  padding: 1rem
+  padding: 1rem;
 }
 
 .pb1 {
@@ -156,6 +161,16 @@
 }
 
 /* borders */
+.border-0 {
+  /* category:borders */
+  border-width: 0;
+}
+
+.border-1 {
+  /* category:borders */
+  border: 1px;
+}
+
 .border-t-1 {
   /* category:borders */
   border-top-width: 1px;
@@ -174,7 +189,11 @@
 
 .border-gray-500 {
   /* category:borders */
-  border-color: gray;
+  border-color: #c8c8c8;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 /* sizing */
@@ -212,14 +231,19 @@
   height: 20px;
 }
 
-.h160 {
+.h40 {
   /* category:sizing */
-  height: 160px;
+  height: 40px;
 }
 
 .h100 {
   /* category:sizing */
   height: 100px;
+}
+
+.h160 {
+  /* category:sizing */
+  height: 160px;
 }
 
 .h420 {
@@ -237,11 +261,6 @@
   height: 100%;
 }
 
-.max-w960 {
-  /* category:sizing */
-  max-width: 960px;
-}
-
 .max-w384 {
   /* category:sizing */
   max-width: 384px;
@@ -250,6 +269,11 @@
 .max-w448 {
   /* category:sizing */
   max-width: 448px;
+}
+
+.max-w960 {
+  /* category:sizing */
+  max-width: 960px;
 }
 
 .max-wFull {
@@ -393,18 +417,27 @@ html {
   /* category:layout/sizing */
   box-sizing: border-box;
   width: 100%;
+  transition: all 0.5s ease-out;
 }
 
 .media_baseContentSize {
   /* category:spacing */
   max-width: 100%;
   padding: 0 1rem;
+  transition: all 0.5s ease-out;
+}
+
+.media_button_w {
+  /* category:sizing */
+  width: 100%;
+  transition: all 0.5s ease-out;
 }
 
 .media-flex-table {
   /* category:flexBox or grid */
   display: flex;
   flex-direction: column;
+  transition: all 0.5s ease-out;
 }
 
 .media_header_flexStyle {
@@ -418,6 +451,7 @@ html {
 .media_header_height {
   /* category:sizing */
   height: 120px;
+  transition: all 0.5s ease-out;
 }
 
 .media-thp {
@@ -425,6 +459,7 @@ html {
   padding-top: 1rem;
   padding-right: 1rem;
   padding-left: 1rem;
+  transition: all 0.5s ease-out;
 }
 
 .media-tdp {
@@ -432,58 +467,48 @@ html {
   padding-right: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
+  transition: all 0.5s ease-out;
 }
 
 /* combination animation */
 
-
 @media (min-width: 768px) {
-/* layout */
+  /* layout */
 
+  /* spacing */
 
-/* spacing */
+  /* flexBox or grid */
 
+  /* borders */
 
-/* flexBox or grid */
+  /* sizing */
 
+  /* typography */
 
-/* borders */
+  /* backgrounds */
 
+  /* transitions & animation */
 
-/* sizing */
+  /* transforms */
 
+  /* interactivity */
 
-/* typography */
+  /* SVG */
 
+  /* table */
 
-/* backgrounds */
+  /* effects */
 
+  /* Filters */
 
-/* transitions & animation */
+  /* accessibility */
 
+  /* combination styles */
+  .media_button_w {
+    /* category:sizing */
+    width: 160px;
+  }
 
-/* transforms */
-
-
-/* interactivity */
-
-
-/* SVG */
-
-
-/* table */
-
-
-/* effects */
-
-
-/* Filters */
-
-
-/* accessibility */
-
-
-/* combination styles */
   .media-flex-table {
     /* category:flexBox or grid */
     display: flex;
@@ -500,7 +525,7 @@ html {
     /* category:spacing */
     padding: 1rem;
   }
-  
+
   .media-tdp {
     /* category:spacing */
     padding: 1rem;
@@ -522,66 +547,47 @@ html {
     padding-left: 10px;
   }
 
-
-/* combination animation */
-
-
+  /* combination animation */
 }
 
 @media (min-width: 960px) {
-/* layout */
+  /* layout */
 
+  /* spacing */
 
-/* spacing */
- 
+  /* flexBox or grid */
 
-/* flexBox or grid */
+  /* borders */
 
+  /* sizing */
 
-/* borders */
+  /* typography */
 
+  /* backgrounds */
 
-/* sizing */
+  /* transitions & animation */
 
+  /* transforms */
 
-/* typography */
+  /* interactivity */
 
+  /* SVG */
 
-/* backgrounds */
+  /* table */
 
+  /* effects */
 
-/* transitions & animation */
+  /* Filters */
 
+  /* accessibility */
 
-/* transforms */
-
-
-/* interactivity */
-
-
-/* SVG */
-
-
-/* table */
-
-
-/* effects */
-
-
-/* Filters */
-
-
-/* accessibility */
-
-
-/* combination styles */
+  /* combination styles */
   .media_header_flexStyle {
     /* category:flexBox or grid */
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
+
   .media_header_height {
     /* category:sizing */
     height: 270px;
@@ -617,8 +623,5 @@ html {
     padding-right: 0;
   }
 
-
-/* combination animation */
-
-
+  /* combination animation */
 }

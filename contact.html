@@ -11,37 +11,37 @@
   </head>
   <body>
     <header
-    id="header"
-    class="sectionCenter media_baseContentSize media_header_height media_header_flexStyle"
-  >
-    <h1>
-      <a href="./index.html"><img src="./public/logo.svg" alt="logo" /></a>
-    </h1>
-    <nav class="max-w448 wFull">
-      <ul class="flex-justifyBetween">
-        <li class="list-none">
-          <a class="pl1 text1 aStyleNone" href="./index.html#about">About</a>
-        </li>
-        <li class="list-none">
-          <a class="pl1 text1 aStyleNone" href="./works.html">Works</a>
-        </li>
-        <li class="list-none">
-          <a class="pl1 text1 aStyleNone" href="./news.html">News</a>
-        </li>
-        <li class="list-none">
-          <a class="pl1 text1 aStyleNone" href="./contact.html">Contact</a>
-        </li>
-        <li class="list-none">
-          <a href="#" target="_blank"
-            ><img
-              class="w20 h20"
-              src="./public/icon-instagram.png"
-              alt="Instagram"
-          /></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      id="header"
+      class="sectionCenter media_baseContentSize media_header_height media_header_flexStyle"
+    >
+      <h1>
+        <a href="./index.html"><img src="./public/logo.svg" alt="logo" /></a>
+      </h1>
+      <nav class="max-w448 wFull">
+        <ul class="flex-justifyBetween">
+          <li class="list-none">
+            <a class="pl1 text1 aStyleNone" href="./index.html#about">About</a>
+          </li>
+          <li class="list-none">
+            <a class="pl1 text1 aStyleNone" href="./works.html">Works</a>
+          </li>
+          <li class="list-none">
+            <a class="pl1 text1 aStyleNone" href="./news.html">News</a>
+          </li>
+          <li class="list-none">
+            <a class="pl1 text1 aStyleNone" href="./contact.html">Contact</a>
+          </li>
+          <li class="list-none">
+            <a href="#" target="_blank"
+              ><img
+                class="w20 h20"
+                src="./public/icon-instagram.png"
+                alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="wFull flex-column flex-alignCenter">
       <section id="mainVisual" class="relative wFull h160 mb5">
         <picture class="wFull hFull">
@@ -68,29 +68,44 @@
         itemscope
         itemtype="https://schema.org/News"
       >
-        <h2 class="textCenter mb1">News</h2>
-        <table class="wFull line-h1_5">
-          <tr class="media-flex-table border-t-1 border-solid border-gray-500">
-            <th class="media-thp align-baseline">2020.XX.XX</th>
-            <td class="media-tdp align-baseline">デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</td>
-          </tr>
-          <tr class="media-flex-table border-t-1 border-solid border-gray-500">
-            <th class="media-thp">2020.XX.XX</th>
-            <td class="media-tdp">ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</td>
-          </tr>
-          <tr class="media-flex-table border-t-1 border-solid border-gray-500">
-            <th class="media-thp">2019.XX.XX</th>
-            <td class="media-tdp">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</td>
-          </tr>
-          <tr class="media-flex-table border-t-1 border-solid border-gray-500">
-            <th class="media-thp">2019.XX.XX</th>
-            <td class="media-tdp">デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</td>
-          </tr>
-          <tr class="media-flex-table border-y-1 border-solid border-gray-500">
-            <th class="media-thp">2019.XX.XX</th>
-            <td class="media-tdp">【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</td>
-          </tr>
-        </table>
+        <h2 class="textCenter mb1">Contact</h2>
+        <form class="max-w960 sectionCenter" action="">
+          <dl>
+            <dt>NAME</dt>
+            <dd class="mb1">
+              <input
+                class="wFull p0_5 border-1 border-solid border-gray-500 rounded"
+                type="text"
+                name="name"
+                id="name"
+              />
+            </dd>
+            <dt>E-mail</dt>
+            <dd class="mb1">
+              <input
+                class="wFull p0_5 border-1 border-solid border-gray-500 rounded"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </dd>
+            <dt>MESSAGE</dt>
+            <dd class="mb1">
+              <textarea
+                class="wFull h160 p0_5 border-1 border-solid border-gray-500 rounded"
+                name="message"
+                id="message"
+              ></textarea>
+            </dd>
+          </dl>
+          <p>
+            <input
+              class="media_button_w h40 border-0 rounded font-bold text-white bg-black"
+              type="submit"
+              value="Submit"
+            />
+          </p>
+        </form>
       </section>
     </main>
     <footer class="py0_5 textCenter text0_75 text-white bg-black">
